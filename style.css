@@ -1,0 +1,144 @@
+html,body{
+    font-family: 'Archivo', sans-serif;
+}
+.flex-container {
+  display: flex;
+  justify-content: center;
+  height: auto;
+  background-color: white;
+}
+.bg-grey{
+    background-color: #F7F7F7;
+}
+.shadow{
+    box-shadow: 2px 3px;
+    background-color: #FDC830;
+}
+#head-one, #content-one{
+    border:2px solid #DFDFDF;
+    padding:2px 30px;
+}
+#head-one > h2 > a {
+    text-decoration: none;
+    color: black;
+}
+#head-one > h2 > a:hover{
+    text-decoration: overline;
+    color: black;
+}
+#content-one{
+    border-top:0;
+    display:block;
+}
+#head-two, #content-two, #head-three, #content-three{
+    border-top: 0;
+    border-right:2px;
+    border-bottom:2px;
+    border-left:2px;
+    border-color: #DFDFDF;
+    border-style: solid;
+    padding:2px 30px;
+    
+}
+#head-two > h2 > a {
+    text-decoration: none;
+    color: black;
+}
+#head-two > h2 > a:hover{
+    text-decoration: overline;
+    color: black;
+}
+
+#head-three > h2 > a {
+    text-decoration: none;
+    color: black;
+}
+#head-three > h2 > a:hover{
+    text-decoration: overline;
+    color: black;
+}
+
+#content-two, #content-three{
+    border-top:0;
+    display:none;
+}
+.text-line{
+    text-decoration: underline;
+}
+
+/* Media Queries */
+
+@media screen and (min-width:1200px){
+	h2{
+		font-size: 1.4rem;
+	}
+	p{
+		font-size: 1.1rem;
+	}
+	
+	.flex-container > div {
+	  margin:30px 0;
+	  width: 80%;
+	  height: auto;
+	}
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){ 
+	h2{
+		font-size: 1.4rem;
+	}
+	p{
+		font-size: 1.1rem;
+	}
+	
+	.flex-container > div {
+	  margin:30px 0;
+	  width: 80%;
+	  height: auto;
+	}
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+	h2{
+		font-size: 1.3rem;
+	}
+	p{
+		font-size: 1.05rem;
+	}
+	
+	.flex-container > div {
+	  margin:20px 0;
+	  width: 80%;
+	  height: auto;
+	}
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+	h2{
+		font-size: 1.3rem;
+	}
+	p{
+		font-size: 1.1rem;
+	}
+	
+	.flex-container > div {
+	  margin:20px 0;
+	  width: 80%;
+	  height: auto;
+	}
+}
+
+@media screen and (max-width:575px){
+	h2{
+		font-size: 1rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+
+	.flex-container > div {
+	  margin:10px 5px;
+	  width: 100%;
+	  height: auto;
+	}
+}
